@@ -1,0 +1,122 @@
+/* Header ---------------------------*/
+header{
+	margin: 10px;
+}
+#putOff{
+	float: right;
+	display: none;
+}
+
+/* Navigation ---------------------------*/
+nav{
+	position: fixed;
+	right: 0px;
+	top: 15px;
+}
+
+/* First page ---------------------------*/
+#firstPage{
+	margin-top: 100px;
+}
+
+/* Second page ---------------------------*/
+#secondPage{
+	margin-top: 150px;
+}
+#secondPage button{
+	margin-top: 30px;
+	padding: 5px 20px;
+}
+/*Animation*/
+.animation{
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 2s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0% {margin-top: -150px; color: #ffffff;}
+    100% {margin-top: 150px; color: black;}
+}
+/* Standard syntax */
+@keyframes example {
+    0% {margin-top: -150px; color: #ffffff;}
+    100% {margin-top: 150px; color: black;}
+}
+
+/* Third page ---------------------------*/
+#questions,#connections,#physicalEnergy{
+	margin-bottom: 70px;
+}
+.question-outer{
+	position: relative;
+	display: flex;
+	width: 90%;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 30px auto;
+}
+.question{
+	background: #ffffff;
+	width: 40px;
+	height: 60px;
+	z-index: 10;
+}
+.question>div{
+	border: 2px solid;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	margin: 0 auto;
+	text-align: center;
+}
+#connectLine{
+	position: absolute;
+	border-bottom: 2px solid;
+	width: 100%;
+	top: 20px;
+	z-index: 0;
+}
+
+/*Connections*/
+#connections ol{
+	width: 100%;
+	text-align: left;
+}
+.connection-squares{
+	display: flex;
+	width: 90%;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.connection-square{
+	width: 55px;
+	height: 100px;
+	text-align: center;
+}
+.connection-square>div{
+	border: 2px solid;
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+}
+
+/*physicalEnergy*/
+#physicalEnergy ol{
+	width: 100%;
+	text-align: left;
+}
+#physicalEnergy textarea{
+	width: 90%;
+}
+
+/* Fourth page ---------------------------*/
+#fourthPage ol{
+	width: 100%;
+	text-align: left;
+}
